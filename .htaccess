@@ -1,0 +1,8 @@
+# Собственная страница ошибки 404
+ErrorDocument 404 /salon-myata/404.php
+# На хостинге в корне домена замените строку выше на: ErrorDocument 404 /404.php
+Options -Indexes
+AddDefaultCharset UTF-8
+<FilesMatch "^(config\.local\.php|config\.local\.example\.php)$">
+    Require all denied
+</FilesMatch>

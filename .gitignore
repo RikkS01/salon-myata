@@ -1,0 +1,4 @@
+config.local.php
+uploads/upload-*
+.DS_Store
+Thumbs.db
