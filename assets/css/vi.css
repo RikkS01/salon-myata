@@ -1,0 +1,35 @@
+/* Версия для слабовидящих по ГОСТ Р 52872-2019 «Интернет-ресурсы и другая информация,
+   представленная в электронно-цифровой форме. Приложения для стационарных и мобильных
+   устройств, иные пользовательские интерфейсы. Требования доступности для людей
+   с инвалидностью и других лиц с ограничениями жизнедеятельности».
+   Размер шрифта 3 уровня, 4 цветовые схемы, отключение изображений, межбуквенный интервал. */
+body.vi { --font: Arial, Verdana, sans-serif; --font-head: Arial, Verdana, sans-serif; }
+body.vi * { box-shadow: none !important; text-shadow: none !important; border-radius: 0 !important; transition: none !important; }
+body.vi-size-1 { font-size: 20px; } body.vi-size-2 { font-size: 24px; } body.vi-size-3 { font-size: 28px; }
+html:has(body.vi-size-1) { font-size: 20px; } html:has(body.vi-size-2) { font-size: 24px; } html:has(body.vi-size-3) { font-size: 28px; }
+body.vi-space { letter-spacing: .12em; word-spacing: .25em; line-height: 1.9; }
+body.vi .card:hover { transform: none; }
+body.vi .cards { grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); }
+body.vi .header-contacts small, body.vi .logo small { font-size: .9rem; }
+
+/* схемы: чёрный на белом, белый на чёрном, тёмно-синий на голубом, коричневый на бежевом */
+body.vi-bw    { --bg: #FFFFFF; --fg: #000000; }
+body.vi-wb    { --bg: #000000; --fg: #FFFFFF; }
+body.vi-blue  { --bg: #9DD1FF; --fg: #063462; }
+body.vi-brown { --bg: #F7F3D6; --fg: #4D4B43; }
+body.vi, body.vi * { background: var(--bg) !important; color: var(--fg) !important; border-color: var(--fg) !important; }
+body.vi a { text-decoration: underline !important; }
+body.vi .btn, body.vi .search button, body.vi .main-nav a.active { border: 2px solid var(--fg) !important; }
+body.vi input, body.vi select, body.vi textarea { border: 2px solid var(--fg) !important; }
+body.vi .slider { height: auto; }
+body.vi .slide { position: static; opacity: 1; background-image: none !important; display: block; padding: 10px 0; border-bottom: 1px solid var(--fg); }
+body.vi .slider-dots { display: none; }
+body.vi .slide-text strong { font-size: 1.5rem; }
+body.vi-noimg img, body.vi-noimg figure { display: none !important; }
+body.vi:not(.vi-noimg) img { filter: grayscale(100%); }
+
+.vi-panel { border-bottom: 3px solid var(--fg); padding: 10px 0; }
+.vi-panel-inner { display: flex; flex-wrap: wrap; gap: 10px 26px; align-items: center; }
+.vi-group { display: inline-flex; gap: 6px; align-items: center; font-weight: 700; }
+.vi-btn { display: inline-block; padding: 2px 10px; border: 2px solid var(--fg); text-decoration: none !important; font-weight: 700; }
+.vi-btn.active { outline: 3px solid var(--fg); outline-offset: 2px; }
