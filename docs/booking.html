@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Онлайн-запись – Салон красоты «Мята»</title>
+    <meta name="description" content="Салон красоты «Мята»: стрижки, окрашивание, маникюр, косметология, массаж и макияж. Онлайн-запись.">
+    <link rel="icon" href="/salon-myata/favicon.ico">
+    <link rel="stylesheet" href="/salon-myata/assets/css/style.css">
+        <link rel="stylesheet" href="/salon-myata/assets/css/vi.css" media="not all" id="vi-css">
+    <link rel="stylesheet" href="/salon-myata/assets/css/demo.css">
+    <script src="/salon-myata/assets/js/demo-data.js"></script>
+    <script src="/salon-myata/assets/js/demo.js" defer></script>
+</head>
+<body class="">
+<a class="skip" href="#main">Перейти к содержанию</a>
+<header class="site-header">
+    <div class="wrap header-top">
+        <a class="logo" href="/salon-myata/">
+            <img src="/salon-myata/assets/img/logo.png" alt="" width="48" height="48">
+            <span><strong>Мята</strong><small>салон красоты</small></span>
+        </a>
+        <form class="search" action="/salon-myata/search.html" method="get" role="search">
+            <label class="sr" for="q">Поиск по сайту</label>
+            <input id="q" type="search" name="q" placeholder="Поиск по сайту" value="">
+            <button type="submit">Найти</button>
+        </form>
+        <div class="header-contacts">
+            <a href="tel:+74950000000">+7 (495) 000-00-00</a>
+            <small>Ежедневно с 9:00 до 21:00</small>
+        </div>
+        <div class="header-actions">
+                            <a class="btn-vi" href="/salon-myata/vi.html?vi=1&amp;back=%2Fsalon-myata%2Fbooking.php"
+                   title="Версия для слабовидящих">Версия для слабовидящих</a>
+                                        <a href="/salon-myata/login.html">Вход</a> · <a href="/salon-myata/register.html">Регистрация</a>
+                    </div>
+    </div>
+    <nav class="main-nav" aria-label="Главное меню">
+        <div class="wrap">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-label">☰ Меню</label>
+            <ul>
+                                    <li><a href="/salon-myata/index.html">Главная</a></li>
+                                    <li><a href="/salon-myata/about.html">О салоне</a></li>
+                                    <li><a href="/salon-myata/section-services.html">Услуги</a></li>
+                                    <li><a href="/salon-myata/section-masters.html">Мастера</a></li>
+                                    <li><a href="/salon-myata/prices.html">Цены</a></li>
+                                    <li><a href="/salon-myata/section-promo.html">Акции</a></li>
+                                    <li><a href="/salon-myata/section-news.html">Новости</a></li>
+                                    <li><a href="/salon-myata/section-blog.html">Блог</a></li>
+                                    <li><a href="/salon-myata/contacts.html">Контакты</a></li>
+                                <li><a class="nav-cta" href="/salon-myata/booking.html">Записаться</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main id="main" class="wrap">
+    <nav class="crumbs" aria-label="Навигационная цепочка">
+        <a href="/salon-myata/">Главная</a>
+         › <span>Онлайн-запись</span>    </nav>
+<h1>Онлайн-запись</h1>
+<p class="lead">Заполните форму – администратор салона подтвердит запись в течение часа в рабочее время.
+ <a href="/salon-myata/login.html?next=%2Fsalon-myata%2Fbooking.php">Войдите</a>, чтобы видеть историю записей.</p>
+<form method="post" class="form form-wide">
+        <label>Ваше имя <input name="name" required value=""></label>
+    <label>Телефон <input name="phone" type="tel" required placeholder="+7 (900) 123-45-67" value=""></label>
+    <label>Услуга
+        <select name="service_id" required><option value="">— выберите —</option>
+            <option value="1">Стрижки и укладки (от 1 800 ₽)</option><option value="2">Окрашивание волос (от 4 500 ₽)</option><option value="3">Маникюр и педикюр (от 2 200 ₽)</option><option value="4">Косметология (от 3 500 ₽)</option><option value="5">Массаж и SPA (от 2 800 ₽)</option><option value="6">Макияж и брови (от 2 000 ₽)</option>        </select></label>
+    <label>Мастер
+        <select name="master_id"><option value="">Любой свободный мастер</option>
+            <option value="7">Анна Соколова – стилист-колорист</option><option value="8">Ирина Волкова – мастер ногтевого сервиса</option><option value="9">Елена Морозова – косметолог-эстетист</option><option value="10">Дмитрий Орлов – барбер и парикмахер</option><option value="11">Ольга Лебедева – массажист</option><option value="12">Мария Ким – визажист и бровист</option>        </select></label>
+    <label>Дата <input type="date" name="visit_date" required min="2026-11-02" value="2026-11-03"></label>
+    <label>Время
+        <select name="visit_time"><option>09:00</option><option>10:00</option><option selected>11:00</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option>18:00</option><option>19:00</option><option>20:00</option></select></label>
+    <label class="full">Комментарий <textarea name="comment" rows="3" placeholder="Например: первое посещение"></textarea></label>
+    <p class="full small">Нажимая «Записаться», вы соглашаетесь на обработку персональных данных (152-ФЗ) для связи по записи.</p>
+    <button class="btn" type="submit">Записаться</button>
+</form>
+</main>
+<div class="demo-note" role="note">Демонстрационная версия сайта на GitHub Pages: вход, запись, сообщения и панель управления работают в браузере, данные хранятся только у вас на устройстве. Полная версия на PHP и MySQL – в <a href="https://github.com/RikkS01/salon-myata">репозитории</a>.</div>
+<footer class="site-footer">
+    <div class="wrap footer-grid">
+        <div>
+            <strong>Салон красоты «Мята»</strong>
+            <p>г. Москва, ул. Примерная, д. 1 (учебный адрес)<br>Ежедневно с 9:00 до 21:00</p>
+            <p><a href="tel:+74950000000">+7 (495) 000-00-00</a> ·
+               <a href="mailto:info@myata-salon.local">info@myata-salon.local</a></p>
+        </div>
+        <div>
+            <strong>Разделы</strong>
+            <ul>
+                                    <li><a href="/salon-myata/section-services.html">Услуги</a></li>
+                                    <li><a href="/salon-myata/section-masters.html">Мастера</a></li>
+                                    <li><a href="/salon-myata/section-promo.html">Акции</a></li>
+                                    <li><a href="/salon-myata/section-news.html">Новости</a></li>
+                                    <li><a href="/salon-myata/section-blog.html">Блог</a></li>
+                            </ul>
+        </div>
+        <div>
+            <strong>Клиентам</strong>
+            <ul>
+                <li><a href="/salon-myata/booking.html">Онлайн-запись</a></li>
+                <li><a href="/salon-myata/prices.html">Цены</a></li>
+                <li><a href="/salon-myata/contacts.html">Написать нам</a></li>
+                <li><a href="/salon-myata/sitemap.html">Карта сайта</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap footer-note">
+        © 2026 Салон красоты «Мята». Учебный проект: салон, адрес и персонал вымышлены.
+        Разработчик – Яцко Сорин, МУ им. С.Ю. Витте.
+    </div>
+</footer>
+<script src="/salon-myata/assets/js/main.js" defer></script>
+</body>
+</html>
