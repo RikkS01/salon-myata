@@ -15,8 +15,8 @@ import urllib.request
 from html import unescape
 
 BASE = 'http://localhost/salon-myata/'
-SITE = '/home/claude/w4/site/salon-myata'
-OUT = sys.argv[1] if len(sys.argv) > 1 else '/home/claude/w4/site/docs'
+SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # корень сайта
+OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(SITE, 'docs')
 PREFIX = '/salon-myata'
 HOST = 'https://rikks01.github.io'
 
